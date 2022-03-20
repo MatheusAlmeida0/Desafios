@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700&display=swap');
+
+:root{    
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --darkcyan: hsl(179, 100%, 13%);
+
+    --font-Sholders:'Big Shoulders Display', cursive;
+    --font-Lexend: 'Lexend Deca', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    width: 900px;
+    height: 470px;
+    display: flex;
+}
+
+.cars{
+    color: white;
+}
+
+.cars h1{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 20px 0px 0px 40px;
+}
+
+.cars p{
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    margin: 20px 40px 0px 40px;
+    text-align: left;
+    line-height: 23px;
+}
+
+.cars button{
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.cars img {
+    margin-top: 40px;
+    margin-left:  40px;
+}
+
+#sedans{
+    background-color: var(--orange);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#sedans button{
+    color: var(--orange);
+}
+
+#suvs{
+    background-color: var(--cyan);
+}
+
+#suvs button{
+    color: var(--cyan);
+}
+
+#luxury{
+    background-color: var(--darkcyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+#luxury button{
+    color: var(--darkcyan);
+}

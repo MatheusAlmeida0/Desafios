@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+  --Verydarkblue: hsl(226, 43%, 10%);
+  --Darkblue: hsl(235, 46%, 20%);
+  --Desaturatedblue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+  --Blue: hsl(246, 80%, 60%);
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --selfcare: hsl(43, 84%, 65%);
+  
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
+  background-color: var(--Verydarkblue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main{
+  background-color: transparent;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+}
+
+/*----------- CARD PERFIL -----------*/
+
+.perfil{
+  background-color: var(--Darkblue);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 300px;
+  height: 100%;
+}
+
+.perfil-info{
+  background-color: var(--Blue);
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-info img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.perfil-info span{
+  margin-top: 40px;
+  margin-left: 20px;
+  color: var(--PaleBlue);
+  font-size: 18px;
+}
+
+.perfil-info h1{
+  font-size: 40px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.perfil > p{
+  font-size: 18px;
+  color: var(--Desaturatedblue);
+  margin-left: 20px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+.perfil > p:hover{
+  color: rgba(255, 255, 255, 0.746);
+  cursor: pointer;
+}
+
+/*---------- CARDS ---------*/
+
+.cards{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.cards-fileira-de-cima{
+  width: 100%;
+  margin-bottom: 30px;
+  height: 50%;
+  display: flex;
+  gap: 30px;
+}
+
+.cards-fileira-de-baixo{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 30px;
+}
+
+.card-estilo{
+  width: 250px;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.card-info{
+  width: 100%;
+  height: 80%;
+  background-color: var(--Darkblue);
+  border-radius: 10px;
+}
+
+.card-info  p{
+  font-size: 45px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.card-info > span{
+  color: var(--Desaturatedblue);
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.parte-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.parte-1 span{
+  font-size: 18px;
+}
+
+.parte-1 img{
+  width: 20px;
+  height: 5px;
+}
+
+.card-work{
+  background-color: var(--work);
+  background-image: url(assets/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -5%;
+}
+
+.card-play{
+  background-color: var(--play);
+  background-image: url(assets/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -5%;
+}
+
+.card-study{
+  background-color: var(--study);
+  background-image: url(assets/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -5%;
+}
+
+.card-exercise{
+  background-color: var(--exercise);
+  background-image: url(assets/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+}
+
+.card-social{
+  background-color: var(--social);
+  background-image: url(assets/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 2%;
+}
+
+.card-selfCare{
+  background-color: var(--selfcare);
+  background-image: url(assets/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -8%;
+}

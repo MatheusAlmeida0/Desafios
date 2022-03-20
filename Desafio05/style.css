@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Risque&family=Roboto:wght@300;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+main{
+  background-color: #00523F;
+  background-image: url(imagens/fundo.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tudo{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img{
+  margin-top: 80px;
+}
+
+header h1{
+  color: white;
+  font-family: 'Risque', cursive;
+  font-weight: 700;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.conteudo{
+  width: 530px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  margin: 20px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
+  width: 100%;
+  height: 50%;
+}
+
+form #email{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #FFC42A;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+form #email::selection{
+  outline: none;
+}
+.Username label{
+  color: white;
+  font-weight: 700;
+}
+
+form #password{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+}
+
+.Password label{
+  color: white;
+  font-weight: 700;
+}
+
+.conteudo span{
+  text-align: right;
+}
+.conteudo span a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  color:#00523F;
+  background-color: #FFC42A;
+  border: none;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/**/
+.pessoa img{
+  position: absolute;
+  top: 150px;
+  left: 1150px;
+}
+
+.luz img{
+  position: absolute;
+  width: 174px;
+  height: 250px;
+  left: 1050px;
+  top: 0;
+}

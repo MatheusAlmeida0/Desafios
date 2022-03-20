@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--LightGray);
+}
+
+main{
+  width: 800px;
+  height: 500px;
+  display: grid;
+  grid-template-areas: 
+  " community community"
+  " subscription WhyUs";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.community{
+  grid-area: community;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: rgb(27 26 26 / 9%) 6px -3px 6px 0px;
+}
+
+.community h1 {
+  color: var(--Cyan);
+  font-weight: 700;
+  margin: 40px 0px 20px 35px;
+}
+
+.community span{
+  color: var(--BrightYellow);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 0px 0px 35px;
+}
+
+.community p{
+  color: var(--GrayishBlue);
+  margin: 20px 35px 0px 35px;
+  line-height: 30px;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.subscription{
+  grid-area: subscription;
+  background-color: var(--Cyan);
+  color: white;
+  border-radius: 0px 0px 0px 10px;
+  box-shadow: 0px 3px 5px rgba(27, 26, 26, 0.205);
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription h2{
+  margin: 30px 0px 15px 35px;
+}
+
+.subscription span{
+  margin: 0px 0px 10px 35px;
+  color: var(--GrayishBlue);
+}
+
+.subscription strong{
+  color: white;
+  font-size: 32px;
+  padding-right: 10px ;
+}
+
+.subscription p{
+  font-size: 18px;
+  margin-left: 35px;
+}
+
+.subscription button{
+  background-color: var(--BrightYellow);
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 80%;
+  align-self: center;
+  margin: 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.WhyUs{
+  grid-area: WhyUs;
+  color: white;
+  background-color: hsla(179, 62%, 43%, 0.774);
+  border-radius: 0px 0px 10px 0px;
+  box-shadow: 3px 3px 5px rgba(27, 26, 26, 0.205);
+}
+
+.WhyUs h2{
+  margin: 30px 0px 15px 35px;
+}
+
+.WhyUs p{
+  text-align: left;
+  color: var(--LightGray);
+  margin: 0px 35px 0px 35px;
+  line-height: 22px;
+}
