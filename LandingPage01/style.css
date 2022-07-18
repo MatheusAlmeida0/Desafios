@@ -44,13 +44,28 @@ header{
   color: black;
 }
 
-header button{
+header > button{
   border: none;
   color: white;
   font-family: var(--font-texto);
   background-color: #FF7143;
   border-radius: 10px;
   padding: 15px 50px;
+}
+
+/*------------------------------*/
+.menu-mobile-icon > button{
+  border: none;
+  cursor: pointer;
+}
+
+.menu-mobile-icon  img{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.menu-mobile-icon, .menu-mobile-item{
+  display: none;
 }
 
 /*----------- SECTION-1 ----------*/
@@ -341,4 +356,91 @@ header button{
 .plano-starter:hover, .plano-premium:hover, .plano-enterprise:hover{
   background-color: #FF7143;
   color: white;
+}
+
+/*---------- MEDIA QUERIES -----------*/
+
+@media (max-width: 1300px){
+  /*SECTION-1*/
+  .texto-section-1 h1{
+    font-size: 70px;
+  }
+
+  .texto-section-1 p {
+    font-size: 18px;
+    color: #696871;
+  }
+  
+  .section-1 > img{
+    max-width: 460px;
+    max-height: 490px;
+    padding-left: 30px;
+  }
+
+/*APOIADORES*/
+  .apoiadores{
+    gap: 60px;
+  }
+
+/*SECTION-2*/
+
+.texto-section-2 p{
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.section-2 > img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.texto-section-2 h2{
+ padding-right: 10px;
+}
+
+/*SECTION-3*/
+
+.section-3 > img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.texto-section-2 p{
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+/*VANTAGENS*/
+.vantagens{
+  gap: 40px;
+}
+
+/*PLANOS*/
+.text-planos h4{
+  font-size: 50px;
+}
+
+.plano-starter, .plano-premium, .plano-enterprise{
+  width: 280px;
+}
+}
+
+@media (max-width: 730px){
+    .menu{
+      display: none;
+    }
+
+    header > button{
+      display: none;
+    }
+
+    .menu-mobile-icon > button{
+      display: block;
+    }
+
+    .menu-mobile-item{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
 }
