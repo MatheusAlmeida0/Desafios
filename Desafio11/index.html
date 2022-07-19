@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de login</title>
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section>
+      <div class="area-login">
+        <h1>Bem vindos ao <span>Login</span></h1>
+        <p>Preencha os dados do login para acessar</p>
+
+        <form action="POST">
+          <fieldset>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+            <img id="person-user-icon" src="assets/person-outline.svg" alt="">
+          </fieldset>
+          <fieldset>
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <img id="olho-senha" src="assets/eye-outline.svg" onclick="clickOlho()">
+          </fieldset>
+          <input type="submit" value="Entrar">
+        </form>
+      </div>
+    </section>
+</body>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.area-login{
+  width: 520px;
+  height: 470px;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.area-login h1{
+  color: rgba(0, 0, 0, 0.746);
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.area-login h1 span{
+  color: #0078F0;
+}
+
+.area-login p{
+  margin-top: 35px;
+  color: rgba(0, 0, 0, 0.746);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  gap: 25px;
+  width: 100%;
+}
+
+form #usuario, #senha{
+  border: none;
+  width: 320px;
+  height: 50px;
+  outline: none;
+  padding-left: 5px;
+}
+
+form fieldset{
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.456);
+  display: flex;
+  align-items: center;
+}
+
+form #olho-senha, #person-user-icon{
+  width: 20px;
+  display: inline-block;
+}
+
+
+input[type=submit]{
+  display: block;
+  width: 430px;
+  height: 45px;
+  border: none;
+  background-color: #0078F0;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+}
