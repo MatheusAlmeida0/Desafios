@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+}
+
+.img-bgk{
+  height: 100vh;
+  width: 100%;
+  background-image: url(assets/pexels-moose-photos-1037996.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px 15%;
+  background: transparent;
+  /*position: fixed;
+  z-index: 1000;*/
+}
+
+header > p {
+  font-size: 30px;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+}
+
+nav p a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/*SECTION*/
+
+section{
+  padding: 160px 15% 120px;
+}
+
+.home{
+  position: relative;
+ /* height: 100vh;
+  width: 100%;
+  background-image: url(assets/pexels-moose-photos-1037996.jpg);
+  background-size: cover;
+  background-position: center;*/
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.home .esquerda, .direita{
+  width: 50%;
+}
+
+.home h1{
+  font-size: 30px;
+  padding-bottom: 10px;
+}
