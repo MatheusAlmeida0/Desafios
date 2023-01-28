@@ -123,3 +123,76 @@ header{
   gap: 100px;
   margin-top: 64px;
 }
+
+/* ------ SECTION-BENEFICIOS -----*/
+
+.todos-beneficios{
+  width: 100vw;
+  background-color: #F9FAFB;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.beneficios{
+  max-width: 1280px;
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+.beneficios .conteudo{
+  padding-right: 64px;
+}
+
+.beneficios .conteudo p:nth-child(1){
+  max-width: 600px;
+  font-weight: 800;
+  font-size: 36px;
+  padding-top: 15px;
+  line-height: 125%;
+  color: var(--preto-principal);
+}
+
+.beneficios .conteudo p:nth-child(2){
+  max-width: 600px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--cinza-principal);
+  border-bottom: 1px solid #E5E7EB;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.beneficios .conteudo .vantangens{
+  padding-top: 32px;
+}
+
+.beneficios .conteudo .vantangens .vantagens-icones{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.beneficios .conteudo p:last-child{
+  max-width: 600px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--cinza-principal);
+  padding-top: 8px;
+}
+
+
+#conteudo-2{
+  padding-left: 64px;
+  padding-right: 0px;
+}
+
+#titulo-conteudo-2{
+  padding-top: 15px;
+}
