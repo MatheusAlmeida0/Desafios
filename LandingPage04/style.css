@@ -6,13 +6,120 @@
   --roxo-principal: #7E3AF2;
   --preto-principal: #111928;
   --cinza-principal: #6B7280;
-  
-  --font-principal: font-family: 'Inter', sans-serif;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-principal);
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header{
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style: none;
+  padding-left: 32px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--preto-principal);
+}
+
+.usuario{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.usuario button{
+  color: #ffffff;
+  background-color: var(--roxo-principal);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+ font-size: 14px;
+ font-weight: 500;
+}
+
+/* ------ SECTION-1 ------*/
+
+.section-1{
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.section-1 .text h1{
+  max-width: 600px;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--preto-principal);
+}
+
+.section-1 .text p{
+  font-weight: 400;
+  font-size: 20px;
+  color: #6B7280;
+  margin-top: 24px;
+}
+
+.section-1 .text .buttons-section-1{
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.section-1 .text .buttons-section-1 #experimentar{
+  background-color: var(--roxo-principal);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.section-1 .text .buttons-section-1 #prices{
+  background-color: transparent;
+  color: var(--preto-principal);
+  border: 1px solid #E5E7EB;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.section-1 img{
+   max-width: 532px;
+   max-height: 416px;
+}
+
+/* ----- ARTICLE-LOGOS-PARCEIROS -----*/
+
+.logos-parceiros{
+  max-width: 1280px;
+  display: flex;
+  gap: 100px;
+  margin-top: 64px;
 }
