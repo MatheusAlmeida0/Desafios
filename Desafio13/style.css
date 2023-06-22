@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+  display: grid;
+  place-content: center;
+}
+
+.container{
+  width: 327px;
+  height: 656px;
+}
+
+.container h1{
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.cartao-de-embarque{
+  margin-top: 20px;
+}
+
+.voo{
+  background-color: #fff;
+  border-radius: 24px 24px 0px 0px;
+  background-image:
+    radial-gradient(circle at left bottom, #6040a9 15px, transparent 0),
+    radial-gradient(circle at right bottom, #6040a9 15px, transparent 0);
+}
+
+.informacoes-voo{
+  padding-top: 24px;
+  margin-inline: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.numero-voo, .data-voo{
+  display: flex;
+  flex-direction: column;
+}
+
+.numero-voo span:nth-child(1){
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.numero-voo span:nth-child(2){
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.data-voo span:nth-child(1){
+  text-align: end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.data-voo span:nth-child(2){
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.destino{
+  margin: 24px 32px;
+  display: flex;
+}
+
+.local-saida, .local-destino{
+  display: flex;
+  flex-direction: column;
+}
+
+.local-saida span:nth-child(1), .local-destino span:nth-child(1){
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.local-saida span:nth-child(2), .local-destino span:nth-child(2){
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.local-saida span:nth-child(3), .local-destino span:nth-child(3){
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.local-destino span:nth-child(2), .local-destino span:nth-child(3){
+  text-align: end;
+}
+
+.local-destino sup{
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: -0.02em;
+}
+
+.destino img{
+  padding-left: 5px;
+}
+
+.separacao{
+  height: 1px;
+  margin-top: 24px;
+  margin-inline: 20px;
+  color: rgba(0, 0, 0, 0.32);
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+}
+
+.informacoes-passageiro{
+  background-color: #fff;
+  background-image: 
+  radial-gradient(circle at left top, #6040a9 15px, transparent 0), 
+    radial-gradient(circle at left bottom, #6040a9 15px, transparent 0),
+    radial-gradient(circle at right top, #6040a9 15px, transparent 0),
+    radial-gradient(circle at right bottom, #6040a9 15px, transparent 0);
+}
+
+.container-passageiro{
+  padding-top: 24px;
+  margin-inline: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.passageiro, .assento{
+  display: flex;
+  flex-direction: column;
+}
+
+.passageiro span:nth-child(1), .assento span:nth-child(1){
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.passageiro span:nth-child(2), .assento span:nth-child(2){
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.assento span:nth-child(2){
+  text-align: end;
+}
+
+.informaçoes-embarque{
+  background-color: #fff;
+  background-image: 
+    radial-gradient(circle at left top, #6040a9 15px, transparent 0), 
+    radial-gradient(circle at right top, #6040a9 15px, transparent 0);
+    border-radius: 0px 0px 24px 24px;
+}
+
+.container-embarque{
+  padding-top: 24px;
+  margin-inline: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.informacoes-embarque{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.embarque, .terminal, .portao{
+  display: flex;
+  flex-direction: column;
+}
+
+.embarque span:nth-child(1), .terminal span:nth-child(1), .portao span:nth-child(1){
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.embarque span:nth-child(2){
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background: #633BBC;
+  border-radius: 8px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.terminal span:nth-child(2), .portao span:nth-child(2){
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.qr-code{
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-code span{
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.aviso{
+  padding-top: 24px;
+  margin-inline: 32px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.aviso p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.aviso #destaque{
+  font-weight: 500;
+}
+
+#recado{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.64;
+  text-align: center;
+  margin-top: 20px;
+}
